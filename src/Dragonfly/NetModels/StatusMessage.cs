@@ -1,11 +1,12 @@
 ﻿namespace Dragonfly.NetModels
 {
-	using Newtonsoft.Json;
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Net.Http;
 	using System.Text;
+	using System.Text.Json;
+	using System.Text.Json.Serialization;
 
 	/// <summary>
 	/// Object used for collecting and reporting information about code operations.
@@ -327,7 +328,7 @@
 		/// <returns></returns>
 		public HttpResponseMessage ToHttpResponse()
 		{
-			string json = JsonConvert.SerializeObject(this);
+			string json = JsonSerializer.Serialize(this);
 
 			return new HttpResponseMessage()
 			{

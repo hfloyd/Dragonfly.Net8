@@ -2,29 +2,31 @@
 {
     using System;
     using System.Collections.Generic;
-    using Newtonsoft.Json.Linq;
+
+    using System.Text.Json;
+	using System.Text.Json.Nodes;
 
     [Serializable]
     public static class Dictionary
     {
-        public static IDictionary<string, string> JobjectToDictionary(dynamic Jobject)
-        {
-            var dict = new Dictionary<string, string>();
+        //public static IDictionary<string, string> JobjectToDictionary(dynamic Jobject)
+        //{
+        //    var dict = new Dictionary<string, string>();
 
-            JObject cfg = Jobject;
-            if (cfg != null)
-            {
-                if (cfg.Properties() != null)
-                {
-                    foreach (JProperty jprop in cfg.Properties())
-                    {
-                        dict.Add(jprop.Name, jprop.Value.ToString());
-                    }
-                }
-            }
+        //    JsonObject cfg = Jobject;
+        //    if (cfg != null)
+        //    {
+        //        if (cfg.Properties() != null)
+        //        {
+        //            foreach (JsonProperty jprop in cfg.Properties())
+        //            {
+        //                dict.Add(jprop.Name, jprop.Value.ToString());
+        //            }
+        //        }
+        //    }
 
-            return dict;
-        }
+        //    return dict;
+        //}
 
         public static IDictionary<T, S> CombineDictionaries<T, S>(IDictionary<T, S> Dict1, IDictionary<T, S> Dict2)
         {

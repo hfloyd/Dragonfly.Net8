@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Copyright>Heather Floyd [www.HeatherFloyd.com]</Copyright>
@@ -8,13 +8,13 @@
     <Authors>HFloyd</Authors>
     <Company></Company>
     <Product>Dragonfly .Net</Product>
-    <Description>A collection of .Net Helpers &amp; Models (Targeted to .Net 6, compatible with .Net 7+)</Description>
+    <Description>A collection of .Net Helpers &amp; Models (Targeted to .Net 8)</Description>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://dragonflylibraries.com/aspnet-packages/net-helpers-models/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/hfloyd/Dragonfly.Net6</RepositoryUrl>
-    <PackageId>Dragonfly.Net6</PackageId>
-    <AssemblyName>Dragonfly.Net6</AssemblyName>
-    <Version>0.1.0</Version>
+    <RepositoryUrl>https://github.com/hfloyd/Dragonfly.Net8</RepositoryUrl>
+    <PackageId>Dragonfly.Net8</PackageId>
+    <AssemblyName>Dragonfly.Net8</AssemblyName>
+    <Version>1.0.1</Version>
     <AssemblyVersion>$(Version)</AssemblyVersion>
     <FileVersion>$(Version)</FileVersion>
     <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
@@ -22,7 +22,7 @@
     <BaseIntermediateOutputPath />
     <PackageIcon>Dragonfly-NetHelpers-128.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Title>Dragonfly .Net 6 Helpers</Title>
+    <Title>Dragonfly .Net 8 Helpers</Title>
     <IncludeSymbols>True</IncludeSymbols>
   </PropertyGroup>
   <ItemGroup>
@@ -59,8 +59,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.59" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.1.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="8.0.3" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\Dragonfly-NetHelpers-128.png">
